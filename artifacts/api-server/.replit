@@ -1,0 +1,20 @@
+# artifacts/api-server/.replit
+
+entrypoint = "src/index.ts"
+
+# Command executed by the Run button
+# Ensures workspace dependencies are resolved and TypeScript project references are respected
+run = "pnpm install --frozen-lockfile && pnpm run typecheck && pnpm run build && pnpm run start"
+
+# Alternative for faster development (runs TypeScript directly, no full build)
+# run = "pnpm dlx tsx src/index.ts"
+
+# For Replit Deployments / Publishing
+[deployment]
+build = "pnpm install --frozen-lockfile && pnpm run typecheck && pnpm run build"
+run = "pnpm run start"
+
+# Environment variables (Replit usually injects PORT automatically)
+[run.env]
+NODE_ENV = "production"
+PORT = "3000"

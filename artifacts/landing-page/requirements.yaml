@@ -1,0 +1,24 @@
+packages:
+  "framer-motion": "Smooth scroll animations and premium component reveals"
+  "react-hook-form": "Form state management for COD orders"
+  "@hookform/resolvers": "Zod validation for react-hook-form"
+  "clsx": "Utility for constructing className strings conditionally"
+  "tailwind-merge": "Utility function to efficiently merge Tailwind CSS classes"
+
+images:
+  - path: "artifacts/landing-page/public/images/hero-bottle.png"
+    description: "A premium, luxurious dark amber glass medicine bottle with gold cap on a silk dark green background, soft dramatic lighting, realistic, high-end product photography."
+    aspect_ratio: "3:4"
+  - path: "artifacts/landing-page/public/images/gallery-1.png"
+    description: "Ayurvedic herbs and roots displayed aesthetically on a dark wooden table with gold dust and warm golden hour lighting, premium wellness."
+    aspect_ratio: "1:1"
+  - path: "artifacts/landing-page/public/images/gallery-2.png"
+    description: "Aesthetic lifestyle shot of healthy living, soft earthy tones, dark green and gold color palette, luxurious atmosphere."
+    aspect_ratio: "1:1"
+  - path: "artifacts/landing-page/public/images/gallery-3.png"
+    description: "Close up macro shot of an elegant gold foiled label on a dark amber bottle, luxury ayurveda aesthetic, high contrast."
+    aspect_ratio: "1:1"
+
+notes:
+  - No auth required for the landing page
+  - Submit order via POST /api/orders

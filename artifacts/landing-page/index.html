@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="hi">
+  <head>
+    <!--
+      IMPORTANT: The Meta Pixel <script> below is a plain synchronous script (no type="module").
+      Plain scripts always execute before deferred/module scripts, so this pixel initializes
+      and queues PageView before any React or Vite code runs — even though Vite dev mode
+      injects <script type="module"> blocks above it in the rendered HTML.
+    -->
+
+    <!-- Meta Pixel Code — must stay as first plain <script> in <head> -->
+    <script>
+      !function(f,b,e,v,n,t,s)
+      {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+      n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+      if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+      n.queue=[];t=b.createElement(e);t.async=!0;
+      t.src=v;s=b.getElementsByTagName(e)[0];
+      s.parentNode.insertBefore(t,s)}(window, document,'script',
+      'https://connect.facebook.net/en_US/fbevents.js');
+      fbq('init', '922105827363336');
+      fbq('track', 'PageView');
+    </script>
+    <!-- End Meta Pixel Code -->
+
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1" />
+    <title>KamaSutra Gold+ | Ayurvedic Power Booster | Prakriti Herbs</title>
+    <meta name="description" content="Increase stamina naturally with Ayurvedic formula. Order now with COD. KamaSutra Gold+ by Prakriti Herbs — 100% natural, no side effects. Ashwagandha, Shilajit, Safed Musli." />
+    <meta name="keywords" content="KamaSutra Gold+, Prakriti Herbs, Ayurvedic power booster, stamina booster, Ashwagandha, Shilajit, COD, पुरुष शक्ति, आयुर्वेदिक" />
+    <meta name="robots" content="index, follow" />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="product" />
+    <meta property="og:title" content="KamaSutra Gold+ | Ayurvedic Power Booster" />
+    <meta property="og:description" content="Increase stamina naturally with Ayurvedic formula. Order now with COD. 100% natural, no side effects." />
+    <meta property="og:image" content="https://prakritiherbs.in/images/product1.jpg" />
+    <meta property="og:url" content="https://prakritiherbs.in/" />
+    <meta property="og:site_name" content="Prakriti Herbs" />
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="KamaSutra Gold+ | Ayurvedic Power Booster" />
+    <meta name="twitter:description" content="Increase stamina naturally with Ayurvedic formula. Order now with COD." />
+    <meta name="twitter:image" content="https://prakritiherbs.in/images/product1.jpg" />
+
+    <meta name="facebook-domain-verification" content="h4re7o4wd7b6qxjjb5s7ydhngy9cft" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playpen+Sans:wght@100..800&family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <!-- Meta Pixel noscript fallback (must be in body, not head) -->
+    <noscript>
+      <img height="1" width="1" style="display:none"
+        src="https://www.facebook.com/tr?id=922105827363336&ev=PageView&noscript=1"/>
+    </noscript>
+
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
