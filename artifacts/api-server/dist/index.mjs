@@ -36656,9 +36656,10 @@ router5.get("/public/settings", async (_req, res) => {
     }
     res.setHeader("Cache-Control", "public, max-age=300, stale-while-revalidate=60");
     res.json(result);
-  } catch {
-    res.status(500).json({ error: "Failed to fetch public settings" });
-  }
+  } catch (err) {
+  console.error("Public settings error:", err); // ADDED THIS
+  res.status(500).json({ error: "Failed to fetch public settings" });
+}
 });
 router5.get("/admin/settings", requireAdmin, async (_req, res) => {
   try {

@@ -46,7 +46,8 @@ router.get("/public/settings", async (_req, res) => {
     }
     res.setHeader("Cache-Control", "public, max-age=300, stale-while-revalidate=60");
     res.json(result);
-  } catch {
+  } catch (err) {
+    console.error("Public settings error:", err); // ADDED THIS
     res.status(500).json({ error: "Failed to fetch public settings" });
   }
 });
@@ -66,7 +67,8 @@ router.get("/admin/settings", requireAdmin, async (_req, res) => {
       exists[key] = !!rows.find((r) => r.key === key && r.value);
     }
     res.json({ settings, exists });
-  } catch {
+  } catch(err) {
+    console.error("Public settings error:", err); // ADDED THIS
     res.status(500).json({ error: "Failed to fetch settings" });
   }
 });
